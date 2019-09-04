@@ -9,6 +9,7 @@ RUN yum update -y && \
 RUN yum install -y auto{conf,make} ctags elfutils gcc{,-c++} gettext intltool libtool make patch{,utils} && \
     yum install -y redhat-rpm-config rpm-{build,sign} spectool && \
     yum install -y git yum-utils && \
+    yum install -y libusbx libusbx-devel && \
     yum clean all
 
 RUN mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SRPMS,SPECS}

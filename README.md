@@ -10,9 +10,9 @@
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download : `docker pull oingo/gcc`
+2. Download : `docker pull oingo/gcc-centos`
 
 
 ### Usage
 
-    docker run -it -v <volume>:/root/project oingo/gcc /bin/bash
+    docker run --name <container-name> -it -v <volume>:/root/project oingo/gcc-centos /bin/bash
